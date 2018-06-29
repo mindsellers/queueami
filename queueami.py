@@ -48,8 +48,10 @@ class queue(object):
 if __name__ == '__main__':
     import sys
     if len(sys.argv) == 6:
-	print queue(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5]).agents
-        print queue(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5]).freeagents
+	q=queue(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5])
+	print q.agents
+	print q.freeagents
+        q=None
     else:
         print 'Usage: python queueami.py ami_login ami_pass ami_host ami_port queue'
 
