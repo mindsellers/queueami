@@ -51,5 +51,5 @@ if __name__ == '__main__':
 	print queue(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5]).agents
         print queue(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5]).freeagents
     else:
-        print 'Usage: ami.py ami_login ami_pass ami_host ami_port queue'
+        print 'Usage: python queueami.py ami_login ami_pass ami_host ami_port queue'
 
